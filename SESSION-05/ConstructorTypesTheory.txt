@@ -1,0 +1,53 @@
+Class Date
+{
+    public:
+        Date(int dat, int month, int year)
+        {
+            this->day = day;
+            this->month = month;
+            thsi->year = year;
+        }
+}
+
+void test()
+{
+    Date D(23, 5, 2026);
+
+    // Step 1 : Allocate memoryy worth of sizeof(Date)
+    // Step 2 : Call Date::Date(&D, 23, 5, 2026)
+
+    D.show();
+}
+
+/////////////////////
+Types of constructor:
+1.  Parameterized constructor : If a constructor function has at least one non-default parameter other than the implicit this pointer then it is classified as Parameterized constructor.
+    If only this constructos is defined we can no loner define object without providing actual parameters. //Date D; // Not accepted. while creating object you must have your initialization data ready.
+
+
+2.  Default constructor : if the constructor does not have any other parameter than implicit this paramemeter or any other non default parameter then it is classified as a DEFAULT constructor.
+    Compiler does not create default constructor on its own
+    example:
+        Date() { /*Body*/ };
+        Date(int a = 100) { /*Body*/ }; 
+
+3.  Synthesized Default constructor : If programmer has not furnished(writtern) either a parameterized constructor or default constructor then a compiler synthesizes a constructor for that class known as a synthesized constructor
+    this constructor initializes members of class type by running that class default constructor, members of built in type are uninitialized
+    class c
+    {
+        private:
+            std::string s;
+        public:
+            c() : std::string::string(&s);
+    }
+
+function overloading
+// ODR : one definition rule : A variable name can be defined only once in any given scope, however it can be declared many times
+//if ODR is violated then either a compiler or a liner will emit an error
+FO Definition : Give its best definition
+
+Overlload function resolution : Give its best definition
+Viable Functions/Ranking/Candidate function : Give its best definitions
+
+
+string literal is readonly
