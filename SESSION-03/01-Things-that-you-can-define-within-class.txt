@@ -1,0 +1,11 @@
+class ClassName
+{
+    (with access specifiers attribute)
+    // Data member -> define
+    // static data member -> define
+    // member function -> define
+    // static member function -> define
+    // typedef
+    // nested class
+    // enum
+}
