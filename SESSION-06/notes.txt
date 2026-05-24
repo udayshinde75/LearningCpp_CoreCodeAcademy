@@ -1,0 +1,26 @@
+Name mangling :
+
+Question : Addressing of overloaded function name
+Question : What is name mangling
+Question : used local static variable.  data-name-mangling
+
+Constructor initilization list : explain 
+    Uniquely belongs to constructor
+    wherever possible prefer this syntax
+    Constructor initialization list is executes first, before the body.
+    Constructor initialization list sequence do not matter.
+    Use body if we need to evaluate the initializers from the parameters.
+    when we are initializzing const, int&, etc variables we need initialization list
+    if data definition statement of a variable type manadates initilization then it must be initialized by initializer list.
+    Sir, when we write Global data definition means variables directly, we can have it initialised beacuse as soon as code will be brought into memory the variables will get memory? but in cas of class even if class is seen by execution it not assigned with memory since it is just a blueprint, so when we create object then only memory is assigned so initializer is required to make it reallyinitilaized otherwise witthin even a constructor statement it is as good as two separate statement declaration and assignemnt. and in initializer its is declaration + assignment ;
+
+
+SEMANTICS :
+    INITILIZATION SEMANTICS
+    CONST SEMANTICS
+    COPY SEMANTICS
+    MOVE SEMANTICS
+
+
+static :
+    explain
