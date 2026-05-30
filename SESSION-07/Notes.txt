@@ -1,0 +1,25 @@
+1. how to define member functions outside the class.
+2. new, delete
+3. reference variable
+4. namespace
+5. static keword 5 cases
+    Generic syntax
+    
+    class Test
+    {
+        pribate:
+            static T var;
+    }
+
+    T Test::var [ = optional initializer];
+
+
+6. const semantics
+7. mutable, inline
+
+
+
+
+
+
+Memory management lectures : https://www.youtube.com/playlist?list=PLA0Sq4Hr1lOOiTmZ9An7ZA7KQ9q4Mfiw7
