@@ -1,0 +1,23 @@
+Languages For Comparison 
+Assembly    C   C++     Rust    Java/C#         Python/JS       Haskell
+
+Memory model: 
+    Raw Memory : Yes / No 
+    Number of ways to allocate typed memory blocks
+
+Type System: 
+    1)  Does variable name have type? 
+    2)  Annotated Typed vs Inferred Typed | strong vs weak | static vs dyanmic 
+    3)  Different types of variable names available. 
+        Max types are in C++ 
+        a) Instance variable 
+        b) Pointer variable 
+        c) Reference variable 
+        d) rvalue reference varaible 
+        e) template parameter types: 
+            1) Nontype parameter 
+            2) type parameter 
+            3) template-template parameter 
+            4) data variable template 
+    4)  Relation between : data type, variable name, memory object 
+

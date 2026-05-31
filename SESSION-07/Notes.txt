@@ -12,7 +12,7 @@
     }
 
     T Test::var [ = optional initializer];
-
+    Don only use in class definition/member definition, do not use them while declaring, if we did, they are not accessible outside of that file
 
 6. const semantics
 7. mutable, inline

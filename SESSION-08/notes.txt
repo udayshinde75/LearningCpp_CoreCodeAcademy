@@ -1,0 +1,14 @@
+memory leak : velgine
+
+why use new/delete
+1. perspective to make programmer belive that the dyanamic memory allocation feature is comming from language itself, not from OS, as when we use malloc reallc give calls to OS functions.
+2. new != malloc, free != delete. RAII, resource aquisition is initialization. satisfy RAII principal
+
+Namespace :
+    Global naemspace pollution
+    what is scope
+    why scope is used
+    what is namespace
+    Why namespace is used.
+    what does they do : naemspace statement creates a named scope
+    all conditional statement, looping statements, class, all statement like this creates a scope, but their primary goal is not to create scoepe, scope gets created as a by product. but namespacess primary purpose is to create a scope.
