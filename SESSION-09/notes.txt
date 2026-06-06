@@ -1,0 +1,8 @@
+Reference variables :
+    - ref internally uses pointer(its more of a semantic)
+    - manges poiner internally
+    - attach a another name to existing memory block
+    - refrence is a ghost pointer
+    - usecases
+    - Using refrence variable, we can attach instance variable like name to anonymous memory block.
+    - lvalue : location value

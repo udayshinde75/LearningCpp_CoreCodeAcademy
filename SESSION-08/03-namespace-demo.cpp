@@ -17,8 +17,16 @@ namespace X
             {
                 puts("Entered X::MyType::MyType()"); 
                 puts("Entered X::MyType::MyType()"); 
-            }
+            } 
     }; 
+
+    namespace Y
+    {
+        void func()
+        {
+            puts("::X::Y::func()\n");
+        }
+    }
 }
 
 void test_namespace(); 
@@ -42,4 +50,6 @@ void test_namespace()
     X::MyType* p = new X::MyType; 
     delete p; 
     p = 0; 
+
+    ::X::Y::func();
 }
