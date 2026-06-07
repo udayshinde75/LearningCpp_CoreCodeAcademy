@@ -1,0 +1,45 @@
+Static keyword in C :
+    - declaration, definition, use
+    - we use extern so that one global variable from one source file to another , so that compiler gets to know the type of variable.
+    - extern explain in detail(in terms of data and function)(Pure declarative statement)
+    - C uses name mangling for two static variables num in two different files
+
+Multiple file compilation :(cc1, asm, ld)
+    - we give output file name and source files
+    - compiler do not allocate address. compiler only needs type of variable or function.
+    - compiler process one file at a time
+    - compiler produces .s file (.asm on windows)
+    - compiler does not have project level awareness. it only takes one .c file at a time and convert it into .s
+    - assemble .s => .o for each file. (assembles also do not have project level awareness)
+    - linker take all .o files => links all runtime library/std library
+    - linker create executable file. 
+
+
+
+void test1() 
+{
+    int num = 100; 
+}
+
+void test2()
+{
+    static int num = 100;   // local data definition statement qualified by static 
+}
+
+LOCAL NON-STATIC VARIABLE (as in function test1())
+
+VISIBILITY              :   Restricted to function test1() 
+TIME OF ALLOCATION      :   Dynamic (while program is running)
+FREQUENCY OF ALLOCATION :   Per Function Call 
+LIFETIME                :   Lifetime of function execution 
+STORAGE SECTION         :   Stack Frame of the function call 
+
+
+LOCAL STAITC VARIABLE (as in function test2()) 
+
+VISIBILITY              :   Restricted to function test2() 
+TIME OF ALLOCATION      :   Static (at the time of building executable file)
+FREQUENCY OF ALLOCATION :   Once (Not per function call, once at the time of building executable)
+LIFETIME                :   Lifetime of program 
+STORAGE SECTION         :   BSS (Block Started by Symbol : Refer to Memory Management Session - 01)
+
