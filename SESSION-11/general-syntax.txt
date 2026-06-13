@@ -1,0 +1,40 @@
+[static/extern/register/auto] [const] type_annotation Variable_Name [=Initializer];
+
+void test()
+{
+    static const int num = 100; // Possible
+    extern static int num; // not possible
+}
+
+// Storage Classes : static/extern/register/auto
+
+
+// why initialization of data definition statements qualified by const is necessary
+
+int num1 = 100; // Data definition statements.
+int num2;
+
+void()
+{
+    num2 = 100; // Assignment statement.
+}
+
+
+//in C++ this is treated as symbolic constant if initializer is typed statistically
+const int local_const_var = 200;
+// At runtime memory is not accessed.
+
+printf("Before local_const_var = %d\n", local_const_var);
+*l_ptr = 2000;
+printf("After local_const_var = %d\n", local_const_var);
+Before local_const_var = 200
+After local_const_var = 200
+
+// Even for C i got above output. is this because of mac?
+
+
+printf("Before local_const_var = %d\n", *l_ptr);
+*l_ptr = 2000;
+printf("After local_const_var = %d\n", *l_ptr);
+Before local_const_var = 200
+After local_const_var = 2000
