@@ -1,0 +1,1 @@
+static time for storage allocation + constness + statically evaluable initializer + no mutable member = allocation in read only data section.
