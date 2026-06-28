@@ -161,3 +161,15 @@ void test()
     b = n1 == n2; 
     b = n1 != n2; 
 }
+
+
+/*
+class T
+{
+    public:
+    T operator<operator>(const T& other) const
+    {
+        return object of type of T
+    }
+}
+*/
