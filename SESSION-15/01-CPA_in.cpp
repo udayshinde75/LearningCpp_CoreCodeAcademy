@@ -23,13 +23,13 @@ public:
         return temp;
     }
 
-    CPA_int operator++()
+    CPA_int operator--()
     {
         n = n - 1;
         return *this;
     }
 
-    CPA_int operator++(int)
+    CPA_int operator--(int)
     {
         CPA_int temp(this->n);
         this->n = this->n - 1;
