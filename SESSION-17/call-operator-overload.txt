@@ -1,0 +1,20 @@
+//  Signal is a function which accepts 
+// (i) an integer and accepts 
+// (ii) a pointer to a function accepting int and returning void 
+//  and returns 
+//  a pointer to a function accepting int and returning void 
+
+void(*signal(int, void(*)(int)))(int); 
+
+
+void my_signal_handler(int); 
+
+FunctionWrapper fw(my_signal_handler); 
+
+fw(); 
+
+#-----------------------------------------------------------
+
+Declare a pointer to a function accepting two integers and returning an integer 
+
+int (*pfn)(int, int); 
