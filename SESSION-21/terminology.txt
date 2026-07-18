@@ -1,0 +1,47 @@
+Template Parameter List 
+template <typename T>  
+
+General format of template parameter list 
+template <Comma separated list of template parameters>
+
+#---------------------------------------------------------
+
+Template parameters are of three types: 
+    i)      Non-type parameter 
+    ii)     type parameter 
+    iii)    template-template parameter 
+
+How to create template Non-Type Parameter 
+
+template <int N>        -> N is a template non-type parameter  
+template <typename T>   -> T is a template type parameter 
+
+#-------------------------------------------------------------
+
+Template arguments 
+
+Entities used for instantiating a template are called as template arguments 
+
+#---------------------------------------------------------------
+
+
+Template Parameter Type           Template Parameter Annotation             Template Argument 
+
+Non-type                            One of the integers types           Statically evaluable integer expr
+                                    (short/int/long/long long 
+                                    with their signed and unsigned 
+                                    versions)
+
+Type                                typename                            Concrete Type 
+
+#-----------------------------------------------------------------------------------------------------
+
+Function template   -> Function Generate 
+Class Template      -> Class Generate 
+
+Process -> TEMPLATE INSTANTIATION 
+
+Before template INSTANTIATION starts every template parameter is replaced by its corrossponding 
+template argument 
+
+#------------------------------------------------------------------------------------------------------
