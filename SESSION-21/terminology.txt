@@ -45,3 +45,8 @@ Before template INSTANTIATION starts every template parameter is replaced by its
 template argument 
 
 #------------------------------------------------------------------------------------------------------
+
+Template call parameter
+Template argument deduction
+
+Template definition must be available at the point of the templates initiation
